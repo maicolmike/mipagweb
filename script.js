@@ -45,3 +45,51 @@ document.addEventListener('DOMContentLoaded', function () {
     navbar.classList.remove('active');
   });
 });
+
+
+// validacion formulario 
+
+//FORMULARIOS
+
+const form = document.getElementById('form');
+const usuario = document.getElementById('usuario')
+const errorAviso = document.getElementById('error')
+
+function formulariosValidacion() {
+  let advertencia = '';
+  let validoElFormulario = true
+  errorAviso.innerHTML = ''
+
+  if(usuario.value.length < 4){
+    advertencia += 'Tu nombre de usuario deberia ser mayor a 4 digitos'
+    validoElFormulario =false
+  }
+
+  if(!validoElFormulario){
+    errorAviso.innerHTML = advertencia
+  } else {
+    errorAviso.innerHTML = 'Formulario enviado'
+    errorAviso.classList.remove('error')
+  }
+  return validoElFormulario
+
+}
+form.addEventListener("submit", (e) => {
+  if (formulariosValidacion()) {
+    // Si la validación es true se enviara el formulario
+    alert('el formulario se envio con exito')
+    formulario.submit();
+  } else {
+    e.preventDefault(); // Evita que el formulario se envíe
+  }
+});
+
+
+form.addEventListener("submit", (e) => {
+  if (validarFormulario()) {
+    // Si la validación es exitosa, puedes enviar el formulario
+    formulario.submit();
+  } else {
+    e.preventDefault(); // Evita que el formulario se envíe automáticamente
+  }
+});

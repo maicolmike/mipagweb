@@ -106,6 +106,152 @@ nav ul.menu li a {
   height: 750px;
 }
 
+.seccion-3 {
+  background-color: rgb(192, 192, 192);
+}
+
+.pagina {
+  display: flex;
+  justify-content: space-evenly; /* Ajusta el espacio entre los elementos */
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan si no hay suficiente espacio */
+ 
+}
+
+.card {
+  width: 500px; /* Ajusta el ancho de las tarjetas según tus preferencias */
+  margin: 1em; /* Agrega un margen entre las tarjetas */
+  text-align: center; /* Centra el contenido dentro de las tarjetas */
+}
+
+.card img {
+  width: 500px; /* Asegura que la imagen dentro de la tarjeta ocupe el 100% del ancho de la tarjeta */
+  height: 450px; /* Ajusta la altura automáticamente para mantener la proporción */
+  border-radius: 50px;
+}
+
+.card h2 {
+  font-size:24px;
+  margin-bottom:10px;
+  color: rgb(14, 1, 1);
+}
+
+.card p {
+  font-size:18px;
+  margin-bottom:20px;
+}
+
+.card a {
+  text-decoration:none; 
+  color:#fff; 
+  background-color:#333; 
+  padding:10px; 
+}
+
+.seccion-4 {
+  background-color: #83a4cf;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 10px solid #dcd7d6;
+  width: 50%;
+  padding: 15px;
+  margin: 20px auto;
+  border-radius: 2em;
+
+}
+
+/*Formulario*/
+/* section etiqueta=contenedor de formularios*/
+.seccion-formularios {
+  background-color: rgb(2, 49, 94);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+  border: 10px solid #dcd7d6;
+  width: 50%;
+  padding: 15px;
+  margin: 20px auto;
+  border-radius: 2em;
+}
+
+/*titulo*/
+.seccion-formularios h4 {
+  font-size: 65px;
+  color: white;
+}
+
+.formulario {
+  background-color: #b8babc;
+  border-radius: 2em;
+  border: 15px double rgb(2, 49, 94);
+  padding: 1em;
+  width: 75%;
+  height: auto;
+  margin-bottom: 2em;
+}
+
+/*Campos del formulario*/
+
+.campos {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.campos input {
+  
+  border: 0;
+  border-radius: 15px;
+  width: 80%;
+  height: 50px;
+  font-size: 18px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+  text-align: initial;
+  padding-left: 15px;
+}
+
+.campos label {
+  font-size: 23px;
+  color: #424141;
+}
+
+.campos textarea {
+  
+  border-radius: 18px;
+  border: #dcebfe double 15px;
+  width: 80%;
+  min-height: 150px;
+  padding: 10px;
+  font-size: 16px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular',
+      'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+  resize: none;
+}
+
+.campos button {
+  background-color:rgb(2, 49, 94);
+  padding: 14px 40px;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.campos button:hover {
+  background-color: #228507;
+}
+.seccion-formularios p{
+  font-size: 25px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+
 /* MEDIA QUERIES */
 
 /* Estilos para pantallas más pequeñas (hasta 768px) */
@@ -170,6 +316,16 @@ nav ul.menu li a {
     .acerca-de-mi-imagen {
         padding-top: 1em;
      }
+
+
+    /*Formulario*/
+    .seccion-formularios {
+      margin: 1em auto;
+      width: 80%;
+  }
+  .campos textarea{
+      width: 80%;
+  }
 
 
 }

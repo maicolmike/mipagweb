@@ -21,7 +21,7 @@
         <nav class="navbar">
           <ul class="menu">
             <li><a class="navli" href="index.html">Inicio</a></li>
-            <li><a class="navli" href="#seccion-1">Acerca de mí</a></li>
+            <li><a class="navli" href="#acerca-de-mi">Acerca de mí</a></li>
             <li><a class="navli" href="#trabajos">Trabajos</a></li>
             <li><a class="navli" href="#trabajos">Servicios</a></li>
             <li><a class="navli" href="#contacto">Contacto</a></li>
@@ -34,7 +34,7 @@
 
     <main id="seccion-principal">
 
-      <section id="seccion-1" class="seccion-1">
+      <section id="acerca-de-mi" class="seccion-1">
         <div class="acerca-de-mi">
           <h2>Acerca de mi</h2>
           <p class="parrafo">
@@ -59,6 +59,57 @@
       <section class="seccion-2">
         <img src="img/fondo5.jpg" alt="imagen de carrusel" class="tamano3" />
       </section>
+
+      <section id="trabajos" class="seccion-3">
+        <div class="pagina">
+          <div class="card">
+            <img src="img/tuerca.png" alt="Curso Online" style="background-color: rgb(4, 2, 81);">
+            <h2>Desarrollo de Sistema de Gestión de Inventarios</h2>
+            <p>En mi rol como ingeniero de sistemas en XYZ Software Solutions, lideré el desarrollo de un Sistema de Gestión de Inventarios personalizado para una cadena de tiendas minoristas. Este proyecto incluyó la integración de tecnologías modernas para optimizar la monitorización y el control de existencias, mejorando significativamente la eficiencia operativa.</p>
+            <a href="#">Saber más</a>
+          </div>
+        
+          <div class="card">
+            <img src="img/fondo7.jpg" alt="libro">
+            <h2>Implementación de Sistema de Seguridad de Datos</h2>
+            <p>Colaboré en la implementación de un sólido sistema de seguridad de datos para ABC Corporation. Este proyecto implicó la evaluación y mejora de las prácticas de seguridad existentes, la introducción de encriptación de extremo a extremo, y la formación del personal para mantener un entorno informático seguro.</p>
+            <a href="#">Saber más</a>
+          </div>
+
+          <div class="card">
+            <img src="img/fondo8.jpg" alt="Trabajos extras">
+            <h2>Desarrollo de Aplicación Móvil de Seguimiento de Proyectos</h2>
+            <p>Participé en el desarrollo de una aplicación móvil de seguimiento de proyectos en mi papel en InnovateTech. Esta aplicación permitió a los equipos de proyectos colaborar de manera más eficaz, realizar un seguimiento del progreso en tiempo real y mejorar la comunicación entre los miembros del equipo, contribuyendo al éxito de múltiples proyectos.</p>
+            <a href="#">Saber más</a>
+          </div>
+        </div>
+        
+      </section>
+
+     <section id="contacto" class="seccion-formularios">
+      <h4>Contacto</h4>
+      <form action="" method="get" class="formulario" id="form">
+          <div class="campos">
+              <label for="usuario">Usuario</label>
+              <br>
+              <input type="text" id="usuario" name="usuario" placeholder="Escribe tu usuario" required>
+          </div>
+          <div class="campos">
+              <label for="email">Email</label>
+              <br>
+              <input type="email" id="email" name="email" placeholder="mi-email@gmail.com" required>
+          </div>
+          <div class="campos">
+              <label for="opinion">Sugerencias para esta web</label>
+              <br>
+              <textarea name="opinion" id="opinion" placeholder="Escribe tu opinión aquí"></textarea>
+          </div>
+          <div class="campos">
+              <button><i>ENVIAR</i></button>
+          </div>
+          <p class="error" id="error"></p>
+      </form>
+  </section>
 
     </main>
 
