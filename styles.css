@@ -63,6 +63,49 @@ nav ul.menu li a {
   
 }
 
+.seccion-1 {
+  background-color: rgb(184, 182, 182);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+}
+
+.seccion-1 h2 {
+  color: rgb(10, 0, 0);
+  font-size: 30px;
+}
+
+.acerca-de-mi {
+  padding-right: 1em;
+  padding-top: 5em;
+}
+/* imagen de aceca de mi*/
+.tamano2{
+  width: 250px;
+  height: 250px;
+ 
+}
+
+.acerca-de-mi-imagen {
+  padding-top: 7em;
+}
+
+.parrafo{
+  padding-top: 1em;
+  font-size: 17px;
+  text-align: justify;
+  line-height: 1.5; /* Ajusta la altura de línea según sea necesario */
+}
+
+.seccion-2 img {
+  width: 100%;
+}
+
+.tamano3{
+  height: 750px;
+}
+
 /* MEDIA QUERIES */
 
 /* Estilos para pantallas más pequeñas (hasta 768px) */
@@ -114,4 +157,19 @@ nav ul.menu li a {
     content: url('img/eco-house.png'); /* Ruta de la nueva imagen para pantallas pequeñas */
     /* Otros estilos si es necesario */
 }
+
+.seccion-1 
+    {
+        flex-direction: column;
+    }
+
+    .acerca-de-mi {
+        text-align: center;
+    }
+
+    .acerca-de-mi-imagen {
+        padding-top: 1em;
+     }
+
+
 }
