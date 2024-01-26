@@ -121,4 +121,9 @@ nav ul.menu li a {
   .navbar.active ul.menu {
     opacity: 1;
   }
+
+  .margen img {
+    content: url('img/eco-house.png'); /* Ruta de la nueva imagen para pantallas pequeñas */
+    /* Otros estilos si es necesario */
+}
 }
